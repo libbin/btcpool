@@ -8,7 +8,7 @@ Install Kafka
 **install depends**
 
 ```
-apt-get install -y default-jre
+apt-get install -y default-jre-headless
 ```
 
 **install Kafka**
@@ -19,6 +19,7 @@ cd /root/source
 wget http://ftp.cuhk.edu.hk/pub/packages/apache.org/kafka/0.10.0.0/kafka_2.11-0.10.0.0.tgz
  
 mkdir -p /work/kafka
+mkdir -p /work/kafka-logs
 cd /work/kafka
 tar -zxf /root/source/kafka_2.11-0.10.0.0.tgz --strip 1
 ```
